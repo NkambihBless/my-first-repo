@@ -8,7 +8,10 @@ THIS IS MY FIRST WORK IN GITHUB
 
 Am a lover a research
 #### am a new developer
+
+*the best way to learn is to ask questions and do research* 
 ##### I LOVE WORKING IN MY LAPTOP
+
+-Never thing you know everything in life
 ###### COMPUTER PROGRAMMING
-####### *the best way to learn is to ask questions and do research*
-######## -Never thing you know everything in life 
+ 
