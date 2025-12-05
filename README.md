@@ -17,7 +17,7 @@ Am a lover a research
 `<h1>`
 ###### COMPUTER PROGRAMMING
 ---
-```cmd
+``` cmd
  git clone <URL>
  ```
  ``` javascript
