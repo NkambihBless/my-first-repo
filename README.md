@@ -15,4 +15,9 @@ Am a lover a research
 >Never thing you know everything in life
 >listin and learn
 ###### COMPUTER PROGRAMMING
- 
+\\\cmd
+ git clone <URL>
+ \\\
+ \\\ javascript
+  CONSOLE.LOG (HELLO")
+  \\\
