@@ -1,6 +1,6 @@
-# heading 1
-# heading 2
-# heading 3
-# heading 4
-# heading 5
-# heading 6
+# my fist repo
+## i love coding
+### Am interested in coding
+#### am a new developer
+##### I LOVE WORKING IN MY LAPTOP
+###### COMPUTER PROGRAMMING
