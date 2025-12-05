@@ -13,11 +13,14 @@ Am a lover a research
 ##### I LOVE WORKING IN MY LAPTOP
 ---
 >Never thing you know everything in life
->listin and learn
+>>listin and learn
+`<h1>`
 ###### COMPUTER PROGRAMMING
+---
 ```cmd
  git clone <URL>
  ```
  ``` javascript
   CONSOLE.LOG ("HELLO")
   ```
+This code was created by [yvesdylane] (http://nkambihbless@gmail.com)
