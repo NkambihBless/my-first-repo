@@ -23,4 +23,4 @@ Am a lover a research
  ``` javascript
   CONSOLE.LOG ("HELLO")
   ```
-This code was created by [yvesdylane] (http://nkambihbless@gmail.com)
+This code was created by [yvesdylane](http://nkambihbless@gmail.com)
