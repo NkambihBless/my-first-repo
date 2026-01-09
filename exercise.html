@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nkambih Bless — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#7e4a20;
+      --card:#48c406;
+      --muted:#c2cedf;
+      --accent:#a5b6c7;
+      --glass:rgb(151, 8, 218);
+      --radius:14px;
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;
+      background:linear-gradient(180deg,var(--bg),#a9f004 120%);
+      color:#0c10f0;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:40px 20px;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+    }
+    .container{width:100%;max-width:var(--max-width);}
+
+    header{
+      display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;
+    }
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo .mark{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#04282e);display:flex;align-items:center;justify-content:center;font-weight:700}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    nav a:hover{color:#0d220b}
+
+    .hero{
+      display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start;margin-bottom:24px;
+    }
+    .card{background:linear-gradient(180deg, rgba(116, 112, 131, 0.945), rgba(73, 5, 161, 0.01)); border-radius:var(--radius);padding:26px;box-shadow:0 6px 30px rgba(2,6,23,0.6);}
+
+    .intro h1{margin:0;font-size:32px;line-height:1.05}
+    .intro p{color:var(--muted);margin-top:12px;font-size:15px}
+    .cta{display:flex;gap:12px;margin-top:18px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:12px;text-decoration:none;font-weight:700}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#031a1f);color:rgb(1, 1, 12);}
+    .btn-ghost{background:transparent;border:1px solid rgb(116, 18, 103);color:var(--muted)}
+
+    .profile{
+      display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center
+    }
+    .avatar{width:160px;height:160px;border-radius:24px;background:var(--glass);display:flex;align-items:center;justify-content:center;font-size:48px}
+    .profile .role{color:var(--muted)}
+
+    /* Projects */
+    .section{margin-top:18px}
+    .section h2{margin:0 0 12px 0}
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .project{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);border:1px solid rgba(255,255,255,0.03)}
+    .project h3{margin:0 0 8px 0;font-size:16px}
+    .project p{margin:0;color:var(--muted);font-size:13px}
+    .tags{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px}
+    .tag{font-size:12px;padding:6px 8px;border-radius:8px;background:rgba(53, 6, 6, 0.02);border:1px solid rgba(58, 11, 11, 0.02)}
+
+    /* skills/contact */
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    ul.skills{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+    ul.skills li{background:var(--card);padding:8px 10px;border-radius:10px;font-weight:600;color:var(--muted)}
+
+    footer{margin-top:28px;color:var(--muted);text-align:center;font-size:13px}
+
+    /* responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .projects{grid-template-columns:repeat(2,1fr)}
+      .grid-2{grid-template-columns:1fr}
+    }
+    @media (max-width:560px){
+      .projects{grid-template-columns:1fr}
+      .logo .mark{width:40px;height:40px}
+      .avatar{width:120px;height:120px}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark">YN</div>
+        <div>
+          <div style="font-weight:800">Nkambih Bless</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:2px">Software engineer • Designer • Problem solver</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="card intro">
+          <h1>Hi — I'm Nkambih Bless</h1>
+          <p>I'm a Software developer who loves building clean, accessible user interfaces and delightful interactions. I focus on performance, thoughtful UX, and maintainable code.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn btn-ghost" href="#projects">See projects</a>
+          </div>
+
+          <div class="section" id="projects">
+            <h2>Selected projects</h2>
+            <div class="projects">
+              <article class="project">
+                <h3>Project One</h3>
+                <p>Brief description of the project that highlights the problem solved and the tech used.</p>
+                <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">API</span></div>
+              </article>
+
+              <article class="project">
+                <h3>Project Two</h3>
+                <p>Short summary: focused on accessibility, performance, and great UX.</p>
+                <div class="tags"><span class="tag">Next.js</span><span class="tag">Tailwind</span></div>
+              </article>
+
+              <article class="project">
+                <h3>Project Three</h3>
+                <p>Mobile-first app with offline support and smooth animations.</p>
+                <div class="tags"><span class="tag">PWA</span><span class="tag">IndexedDB</span></div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card profile">
+          <div class="avatar">YN</div>
+          <div style="font-weight:700">Nkambih Bless</div>
+          <div class="role">Full‑stack / Software Engineer</div>
+          <div style="font-size:13px;color:var(--muted);max-width:260px">I design and build web interfaces with an eye for clarity, speed, and accessibility. I’m available for freelance and full-time roles.</div>
+          <div style="display:flex;gap:8px;margin-top:12px">
+            <a class="btn btn-primary" href="#contact" style="padding:8px 12px;font-size:14px">Hire me</a>
+            <a class="btn btn-ghost" href="#">Resume</a>
+          </div>
+
+          <div style="width:100%;margin-top:16px;text-align:left">
+            <div style="font-weight:700;margin-bottom:8px">Quick info</div>
+            <div style="font-size:13px;color:var(--muted);line-height:1.6">
+              📍 Yaounde, Cameroon<br>
+              ✉️ <a href="mailto:you@example.com" style="color:var(--muted);text-decoration:underline">nkambihbless@gmail.com</a><br>
+              🔗 <a href="#" style="color:var(--muted);text-decoration:underline">github.com/NkambihBless</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="card section" id="about">
+        <h2>About me</h2>
+        <div class="grid-2" style="margin-top:10px">
+          <div>
+            <p style="color:var(--muted)">I build thoughtful web applications, mentor junior engineers, and collaborate closely with designers. I care about performance, accessibility (a11y), and shipping delightful products.</p>
+
+            <h3 style="margin-top:14px">Skills</h3>
+            <ul class="skills" style="margin-top:8px">
+              <li>HTML & CSS</li>
+              <li>JavaScript / TypeScript</li>
+              <li>React / Next.js</li>
+              <li>Accessibility</li>
+              <li>Design systems</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Experience highlights</h3>
+            <ul style="color:var(--muted)">
+              <li style="margin-bottom:8px"><strong>MTN Cameroon</strong> — Senior Software Engineer (2024–Present)</li>
+              <li style="margin-bottom:8px"><strong>Camtle Cameroon</strong> — Technician Engineer (2023–2024)</li>
+            </ul>
+
+            <h3 style="margin-top:12px">Education</h3>
+            <p style="color:var(--muted)">HND in SoftwareEngineering — Yaounde International Business School</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card section" id="contact">
+        <h2>672682519</h2>
+        <p style="color:var(--muted);margin-top:6px">Want to work together or just say hi? Drop a message and I’ll get back to you.</p>
+        <form style="margin-top:12px;display:grid;gap:10px;max-width:700px">
+          <input placeholder="Your name" style="padding: 14px;px;border-radius:10px;border:1px solid rgba(66, 70,21, 0.938);background:transparent;color:inherit" />
+          <input placeholder="Email" type="email" style="padding:12px;border-radius:10px;border:1px solid rgba(66, 70, 21, 0.938);background:transparent;color:inherit" />
+          <textarea placeholder="Message" rows="5" style="padding:12px;border-radius:10px;border:1px solid rgb(107, 121, 33);background:transparent;color:inherit"></textarea>
+          <div style="display:flex;gap:10px">
+            <button type="button" class="btn btn-primary">I will be ready to learn if my applications is given the opportunity it deserved</button>
+            <button type="reset" class="btn btn-ghost">Clear</button>
+          </div>
+        </form>
+      </section>
+
+      <footer>
+        ©"Nkambih Bless" — Built with ❤️ • <span style="color:var(--muted)">Last updated: Nov 28, 2025</span>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
